@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.ViewConfiguration;
 import android.widget.ListView;
 
 import com.example.adapterloli.ItemsAdapter;
@@ -40,11 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerAdapter = RecyclerAdapter.create(this).putItemClass(TestItemView.class).build();
         mListView.setAdapter(mListAdapter);
         mRecyclerView.setAdapter(mRecyclerAdapter);
-
         setData();
-
-
-        Log.d(TAG, "initViews: " + ViewConfiguration.get(this).hasPermanentMenuKey());
     }
 
     private void setData() {

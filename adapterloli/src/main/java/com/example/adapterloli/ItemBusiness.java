@@ -22,7 +22,8 @@ public class ItemBusiness<D> {
         return this;
     }
 
-    public void onItemClick() {}
+    public void onItemClick() {
+    }
 
     public boolean onItemLongClick() {
         return false;
@@ -71,7 +72,7 @@ public class ItemBusiness<D> {
     }
 
     protected void onSetItemData(boolean isFirstSetData, boolean isPosChanged, boolean isDataChanged) {
-        mItemView.showItem(getItemData());
+        mItemView.showItem(mItemView.getHolderHelper(), getItemData());
     }
 
     boolean isSetItemClick() {
