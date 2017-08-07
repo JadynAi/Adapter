@@ -24,6 +24,10 @@ public class ItemBusiness<D> {
 
     public void onItemClick() {}
 
+    public boolean onItemLongClick() {
+        return false;
+    }
+
     public final long createTimestamp() {
         return SystemClock.elapsedRealtime();
     }

@@ -62,6 +62,13 @@ class ItemCreator {
                     itemBusiness.onItemClick();
                 }
             });
+            
+            itemRootView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    return itemBusiness.onItemLongClick();
+                }
+            });
         }
     }
 

@@ -150,6 +150,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         }
     }
 
+    public static Builder create(Activity activity) {
+        return new Builder(activity);
+    }
+
     /**
      * Created by YinJiaYan on 2017/6/27.
      */

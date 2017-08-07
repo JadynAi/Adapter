@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView3);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mListAdapter = new ItemsAdapter.Builder(this).putItemClass(TestItemView.class).build();
-        mRecyclerAdapter = new RecyclerAdapter.Builder(this).putItemClass(TestItemView.class).build();
+        mListAdapter = ItemsAdapter.create(this).putItemClass(TestItemView.class).build();
+        mRecyclerAdapter = RecyclerAdapter.create(this).putItemClass(TestItemView.class).build();
         mListView.setAdapter(mListAdapter);
         mRecyclerView.setAdapter(mRecyclerAdapter);
 
         setData();
 
-        
+
         Log.d(TAG, "initViews: " + ViewConfiguration.get(this).hasPermanentMenuKey());
     }
 

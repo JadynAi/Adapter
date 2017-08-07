@@ -84,6 +84,10 @@ public class ItemsAdapter extends BaseAdapter implements IAdapter {
         return convertView;
     }
 
+    public static Builder create(Activity activity) {
+        return new Builder(activity);
+    }
+
     /**
      * Created by YinJiaYan on 2017/6/27.
      */
