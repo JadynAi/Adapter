@@ -87,10 +87,7 @@ public class ItemsAdapter extends BaseAdapter implements IAdapter {
     public static Builder create(Activity activity) {
         return new Builder(activity);
     }
-
-    /**
-     * Created by YinJiaYan on 2017/6/27.
-     */
+    
     public static class Builder extends ItemCreator.Builder {
 
         private Activity mActivity;

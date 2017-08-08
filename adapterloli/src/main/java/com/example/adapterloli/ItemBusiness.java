@@ -94,10 +94,7 @@ public class ItemBusiness<D> {
         }
         onSetItemData(isFirstSetData, isPosChanged, isDataChanged);
     }
-
-    /**
-     * Created by YinJiaYan on 2017/6/7.
-     */
+    
     public interface Factory {
 
         ItemBusiness create(AbsItemView itemView);

@@ -93,9 +93,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return mDataList.size();
     }
 
-    /**
-     * Created by YinJiaYan on 2017/6/27.
-     */
+   
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         private View mItemView;
@@ -116,9 +114,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         }
     }
 
-    /**
-     * Created by YinJiaYan on 2017/6/29
-     */
+    
     public static class DiffCallback extends DiffUtil.Callback {
 
         private List mOldData;
@@ -154,9 +150,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return new Builder(activity);
     }
 
-    /**
-     * Created by YinJiaYan on 2017/6/27.
-     */
+    
     public static class Builder extends ItemCreator.Builder {
 
         private Activity mActivity;
