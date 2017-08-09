@@ -40,7 +40,8 @@ public class TestItemView extends AbsItemView<ItemBusiness, TestBean> {
 getLayoutId（）这个方法不用多讲了，返回布局Id。
 
 **到这里相信大家也能看出来了，我解决Recyclerview和ListView适配器“通用”的解决方案，是让他们持有相同的ItemView。到时候如果需要更换组件的时候，只需要把代码中RecyclerAdapter.create(this)更换为ItemsAdapter.create(this)，或者反向更换即可。怎么样，是不是很简单呢。**
-![image](http://pic.qqtn.com/up/2017-3/14883343916120558.jpg)
+  
+  ![image](http://pic.qqtn.com/up/2017-3/14883343916120558.jpg)
 
 **其实让两个组件适配器“通用”本来就是一个伪命题，需要的参数都不一样。既然此路不通，那么不妨换种思路，让他俩的ItemView通用不就解决问题了吗。**
 
