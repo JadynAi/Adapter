@@ -76,7 +76,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-//        LogUtils.d(TAG, "position:" + position + "  isRecyclable:" + holder.isRecyclable());
         holder.getItemBusiness().setItemData(position, getItem(position));
     }
 
