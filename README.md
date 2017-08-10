@@ -130,5 +130,3 @@ ItemsAdapter.create(this)
 - 当然你也可以自定义ItemBusiness，因为在项目开发的过程中，有可能也会需要在ItemView内处理不少的业务逻辑。譬如网络请求，交互动画啊等等。
 
 #### 好了，一些基本的操作就在这里了。本项目设计遵从MVP思想，将业务逻辑（ItemBusiness）和UI逻辑（AbsItemView）分离开来。从而使得项目结构更加清晰，方便迭代以及测试。
-
-### 以上就是这个项目的一些简介了。大家要是喜欢的话，这里是GitHub地址[一个Adapter](https://github.com/JadynAi/Adapter)，喜欢的话不妨随手点一个赞吧。
