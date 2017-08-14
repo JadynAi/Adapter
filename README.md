@@ -97,7 +97,7 @@ ItemsAdapter.create(this)
                 })
                 .build()
 ```
->需注意的是，ItemBusin默认是不处理点击事件，需要通过`setItemClick`方法设置为true才能在Business内处理点击事件。
+>需注意的是，ItemBusiness默认是不处理点击事件，需要通过`setItemClick`方法设置为true才能在Business内处理点击事件。
 
 - ItemBusiness内部本身提供了很多方法,方便于一些业务逻辑的处理，譬如点击某个按钮刷新数据，移除数据啊等等。
 
