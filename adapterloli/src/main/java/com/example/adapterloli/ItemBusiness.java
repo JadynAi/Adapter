@@ -47,22 +47,27 @@ public class ItemBusiness<D> {
         return false;
     }
 
+    //刷新列表
     public final void notifyDataSetChanged() {
         mAdapter.notifyDataSetChanged();
     }
 
+    //刷新当前ItemView，只支持Recyclerview
     public final void notifyItemDataChanged() {
         setItemData(mPosition, mItemData);
     }
-
+    
+    //返回总数据size
     public final int getCount() {
         return mAdapter.getItemCount();
     }
 
+    //返回此项数据
     public final D getItemData() {
         return mItemData;
     }
 
+    //返回当前position
     public final int getPosition() {
         return mPosition;
     }
